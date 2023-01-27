@@ -1,0 +1,32 @@
+image:
+  repository: "andreibaitov/drupal"
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  hostname: drupal.k8s-1.sa
+
+persistentVolumeClaim:
+  storageSize: 10Gi
+
+pvc:
+  storage_size: 1Gi
+  storage_class: nfs
+
+nfs:
+  server: 192.168.37.105
+  path: /mnt/IT-Academy/nfs-data/sa2-22-22/Andrei_Baitau/drupal
+
+extraEnvs:
+  - name: MYSQL_HOST
+    value: 192.168.201.1
+  - name: MYSQL_USER
+    value: drupal
+  - name: MYSQL_PASSWORD
+    value: drupal
+  - name: MYSQL_NAME
+    value: drupal

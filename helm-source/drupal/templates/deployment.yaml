@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drupal
+  namespace: {{ .Release.Namespace | quote }}
+  labels:
+    {{- include "drupal.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "drupal.selectorLabels" . | nindent 6 }}
+  replicas: 1
+  minReadySeconds: 8
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        {{- include "drupal.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+        name: drupal
+        env:
+        {{- with  .Values.extraEnvs }}
+          {{- . | toYaml | nindent 10 -}}
+        {{- end }}
+        ports:
+        - containerPort: 80
+          name: http
+        volumeMounts:
+        - name: drupal-persistent-storage
+          mountPath: /var/www/html/core/
+      volumes:
+      - name: drupal-persistent-storage
+        nfs:
+          server: {{ .Values.nfs.server }}
+          path: {{ .Values.nfs.path }}
