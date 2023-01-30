@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   drupal:
   - apiVersion: v2
+    appVersion: 1.32.1
+    created: "2023-01-30T17:24:15.762161964Z"
+    description: A Helm chart for Kubernetes
+    digest: 2e0707cbbee9b1879d7df24c97d20bcaed8b8027737f62c3534651f215d739c6
+    name: drupal
+    type: application
+    urls:
+    - https://andreibaitau.github.io/project_drupal/helm-releases/drupal-1.32.1.tgz
+    version: 1.32.1
+  - apiVersion: v2
     appVersion: 1.31.1
-    created: "2023-01-30T14:41:47.275904105Z"
+    created: "2023-01-30T17:24:15.76187179Z"
     description: A Helm chart for Kubernetes
     digest: fb1c81b2a582c6e6e6eaffacc4a32808f67ac4a380a38ca874c551811faf0b30
     name: drupal
@@ -13,7 +23,7 @@ entries:
     version: 1.31.1
   - apiVersion: v2
     appVersion: 1.30.1
-    created: "2023-01-30T14:41:47.274955916Z"
+    created: "2023-01-30T17:24:15.761561851Z"
     description: A Helm chart for Kubernetes
     digest: 720b045acb6f1259408c5eb7a02e05a747afdc15874ad43ea365df994a63c6af
     name: drupal
@@ -23,7 +33,7 @@ entries:
     version: 1.30.1
   - apiVersion: v2
     appVersion: 1.29.1
-    created: "2023-01-30T14:41:47.273996723Z"
+    created: "2023-01-30T17:24:15.761258971Z"
     description: A Helm chart for Kubernetes
     digest: ff3ee7d85f26faeb657e9f0f8ce7441b5f17ba54851f7bc818dfce9e60247e76
     name: drupal
@@ -33,7 +43,7 @@ entries:
     version: 1.29.1
   - apiVersion: v2
     appVersion: 1.28.1
-    created: "2023-01-30T14:41:47.273206236Z"
+    created: "2023-01-30T17:24:15.760917214Z"
     description: A Helm chart for Kubernetes
     digest: 622d8a75629bf479c99a4ceb58fdf876d3abc8166dba4a016fc003444cdf5c91
     name: drupal
@@ -43,7 +53,7 @@ entries:
     version: 1.28.1
   - apiVersion: v2
     appVersion: 1.27.1
-    created: "2023-01-30T14:41:47.272386109Z"
+    created: "2023-01-30T17:24:15.760600896Z"
     description: A Helm chart for Kubernetes
     digest: 789279bd53678195365335dd04e9280a603ba5603921d4560387cc6d22599850
     name: drupal
@@ -53,7 +63,7 @@ entries:
     version: 1.27.1
   - apiVersion: v2
     appVersion: 1.26.1
-    created: "2023-01-30T14:41:47.271601547Z"
+    created: "2023-01-30T17:24:15.759885748Z"
     description: A Helm chart for Kubernetes
     digest: 1b19e88b82c6fb311110ff825db0b42de3dc4c4a0d01c507bd46e15e6a567b51
     name: drupal
@@ -63,7 +73,7 @@ entries:
     version: 1.26.1
   - apiVersion: v2
     appVersion: 1.25.1
-    created: "2023-01-30T14:41:47.271146107Z"
+    created: "2023-01-30T17:24:15.756239693Z"
     description: A Helm chart for Kubernetes
     digest: 0eb15ab05e0bd8ae642f4257d713670c7e7865d196c0a5d7042d3c5980163fc9
     name: drupal
@@ -73,7 +83,7 @@ entries:
     version: 1.25.1
   - apiVersion: v2
     appVersion: 1.24.1
-    created: "2023-01-30T14:41:47.270726616Z"
+    created: "2023-01-30T17:24:15.755167569Z"
     description: A Helm chart for Kubernetes
     digest: 79cdcf65ef70a94846be87e8cfddbb768076e0595e05dd90097277fef039f401
     name: drupal
@@ -83,7 +93,7 @@ entries:
     version: 1.24.1
   - apiVersion: v2
     appVersion: 1.23.1
-    created: "2023-01-30T14:41:47.270250151Z"
+    created: "2023-01-30T17:24:15.754623168Z"
     description: A Helm chart for Kubernetes
     digest: 8b0ddd527d4caa0eb99abba9ce74f5fbe6541ba922382d7e26d35c568e93c094
     name: drupal
@@ -93,7 +103,7 @@ entries:
     version: 1.23.1
   - apiVersion: v2
     appVersion: 1.22.1
-    created: "2023-01-30T14:41:47.269729906Z"
+    created: "2023-01-30T17:24:15.754238904Z"
     description: A Helm chart for Kubernetes
     digest: fc08bc031ace926cc28bb5e560c8895db903e760822bd4b1f6ca6dcd551d2385
     name: drupal
@@ -103,7 +113,7 @@ entries:
     version: 1.22.1
   - apiVersion: v2
     appVersion: 1.21.1
-    created: "2023-01-30T14:41:47.269209745Z"
+    created: "2023-01-30T17:24:15.753717934Z"
     description: A Helm chart for Kubernetes
     digest: 73b0eaa8b4e5eec8dd266233de57a06a7abccdc1df925f77e5234306daaa503b
     name: drupal
@@ -113,7 +123,7 @@ entries:
     version: 1.21.1
   - apiVersion: v2
     appVersion: 1.19.1
-    created: "2023-01-30T14:41:47.268716806Z"
+    created: "2023-01-30T17:24:15.753416946Z"
     description: A Helm chart for Kubernetes
     digest: efb2434f79974264ae442fdf2068b0d80b350835021fd772f90df433099e39cc
     name: drupal
@@ -123,7 +133,7 @@ entries:
     version: 1.19.1
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2023-01-30T14:41:47.268417991Z"
+    created: "2023-01-30T17:24:15.753030664Z"
     description: A Helm chart for Kubernetes
     digest: f4452c9ddcc86552772a7e92f34298d7e6a77c724ac24951078562cb4f69575d
     name: drupal
@@ -133,7 +143,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-01-30T14:41:47.268098774Z"
+    created: "2023-01-30T17:24:15.752665795Z"
     description: A Helm chart for Kubernetes
     digest: 781c41ef8463e116cef71758968d6ec9f8f12d3fa8c3c7283d650c1107a0f31f
     name: drupal
@@ -141,4 +151,4 @@ entries:
     urls:
     - https://andreibaitau.github.io/project_drupal/helm-releases/drupal-1.0.1.tgz
     version: 1.0.1
-generated: "2023-01-30T14:41:47.26759663Z"
+generated: "2023-01-30T17:24:15.752007105Z"
