@@ -26,7 +26,7 @@ extraEnvs:
     value: 192.168.201.1
   - name: DRUPAL_DATABASE_NAME
     value: drupal
-  - name: DRUPAL_DATABASE_USER
+  - name: DRUPAL_DATABASE_USERNAME
     value: drupal
   - name: DRUPAL_DATABASE_PASSWORD
     value: drupal
