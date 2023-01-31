@@ -22,11 +22,7 @@ nfs:
   path: /mnt/IT-Academy/nfs-data/sa2-22-22/Andrei_Baitau/drupal
 
 extraEnvs: 
-  - name: DRUPAL_DATABASE_HOST
-    value: 192.168.201.1
-  - name: DRUPAL_DATABASE_NAME
-    value: drupal
-  - name: DRUPAL_DATABASE_USERNAME
-    value: drupal
-  - name: DRUPAL_DATABASE_PASSWORD
-    value: drupal
+    host: 192.168.201.1
+    name: drupal
+    user: drupal
+    pass: drupal
