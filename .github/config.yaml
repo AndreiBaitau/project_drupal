@@ -1,0 +1,4 @@
+checks:
+  ignorePaths:
+    - ./helm-source/drupal/templates/
+  doNotAutoAddDefaults: false 
