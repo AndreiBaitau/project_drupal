@@ -1,4 +1,4 @@
 checks:
   ignorePaths:
-    - ./helm-source/wordpress/templates/
+    - ./helm-source/drupal/templates/
   doNotAutoAddDefaults: false 
