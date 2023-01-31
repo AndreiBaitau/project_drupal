@@ -1,0 +1,4 @@
+checks:
+  ignorePaths:
+    - ./helm-source/wordpress/templates/
+  doNotAutoAddDefaults: false 
