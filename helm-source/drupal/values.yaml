@@ -23,9 +23,9 @@ nfs:
 
 extraEnvs: 
   - name: DRUPAL_DATABASE_HOST
-    value: 192.168.201.1
+    value: "192.168.201.1"
   - name: DRUPAL_DATABASE_PORT_NUMBER
-    value: 3306
+    value: '3306'
   - name: DRUPAL_DATABASE_NAME
     value: drupal
   - name: DRUPAL_DATABASE_USER
