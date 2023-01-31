@@ -24,8 +24,8 @@ spec:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
         name: drupal
         env:
-        {{- with  .Values.extraEnvs }}
-          {{- . | toYaml | nindent 10 -}}
+        {{- with quote .Values.extraEnvs }}
+          {{- . | toYaml | nindent 12 -}}
         {{- end }}
         ports:
         - containerPort: 80
