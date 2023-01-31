@@ -35,7 +35,7 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_CHANNEL: git-test
-          SLACK_COLOR: ffb657
+          SLACK_COLOR: ebdf63
           SLACK_ICON: https://miro.medium.com/max/1080/0*LdmqFY2AwGNUwWb8.png
           SLACK_MESSAGE: |-
             "Check result on GitHub."
