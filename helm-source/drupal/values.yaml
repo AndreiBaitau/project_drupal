@@ -21,12 +21,16 @@ nfs:
   server: 192.168.37.105
   path: /mnt/IT-Academy/nfs-data/sa2-22-22/Andrei_Baitau/drupal
 
-extraEnvs:
-  - name: MYSQL_HOST
+extraEnvs: 
+  - name: DRUPAL_DATABASE_HOST
     value: 192.168.201.1
-  - name: MYSQL_USER
+  - name: DRUPAL_DATABASE_PORT_NUMBER
+    value: 3306
+  - name: DRUPAL_DATABASE_NAME
     value: drupal
-  - name: MYSQL_PASSWORD
+  - name: DRUPAL_DATABASE_USER
     value: drupal
-  - name: MYSQL_NAME
+  - name: DRUPAL_DATABASE_PASSWORD
     value: drupal
+  - name: DRUPAL_SKIP_BOOTSTRAP
+    value: yes
