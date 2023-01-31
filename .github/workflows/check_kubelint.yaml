@@ -1,0 +1,44 @@
+name: Check Kubernetes YAMLs with kube-linter
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    env:
+      result_file: result.log
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Scan yaml files with kube-linter
+        uses: stackrox/kube-linter-action@v1.0.4
+        id: kube-linter-action-scan
+        with:
+          directory: ./helm-source/drupal/
+          config: ./.github/config.yaml
+          format: plain
+          output-file: ${{env.result_file}}
+        continue-on-error: true
+      - name: result
+        uses: actions/upload-artifact@v2
+        with:
+          path: ${{ env.result_file }}
+  slack:
+    needs: scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notificationi
+        if: ${{ always() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: git-test
+          SLACK_COLOR: ffb657
+          SLACK_ICON: https://miro.medium.com/max/1080/0*LdmqFY2AwGNUwWb8.png
+          SLACK_MESSAGE: |-
+            "Check result on GitHub."
+          SLACK_TITLE: 'DRUPAL KUBE-LINTER CHECK'
+          SLACK_USERNAME: Andrei Baitov
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}  
